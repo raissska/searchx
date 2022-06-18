@@ -1,0 +1,143 @@
+ol, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+button{
+  padding:0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.results-time{
+  margin-top: 5px;
+  color: #70757a;
+}
+.search{
+  display: flex;
+  align-items: center;
+  height: 44px;
+  background: #fff;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+  border-radius: 24px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.search-visibil-autocomplete{
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 0 2px 8px 1pxrgba(64,60,67,.24);
+  border-color: rgba(223,225,229,0);
+}
+
+.input-search{
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    font-size: 16px;
+}
+
+input:focus-visible {
+  outline-offset: 0px;
+}
+
+.autocomplete-results{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    min-width: 0;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 16px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 9px 8px -3px rgb(64 60 67 / 24%), 8px 0 8px -7px rgb(64 60 67 / 24%), -8px 0 8px -7px rgb(64 60 67 / 24%);
+    border: 0;
+    width: 100%;
+   
+    
+}
+.autocomplete-results-visible{
+  padding-bottom:16;
+  border-top:  1px solid rgb(64 60 67 / 24%);
+}
+
+.autocomplete-results-item {
+
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    max-height: none;
+    padding: 0;
+    margin: 0 20px 0 14px;
+    cursor: pointer;
+
+}
+
+.autocomplete-results-item-div{
+  display: flex;
+  align-items: center;
+  height: 34px;
+
+}
+
+.autocomplete-results-item-icon{
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+}
+.autocomplete-results-item-label{
+  padding-left: 9px;
+}
+
+.input-search-button{
+  padding: 0 8px;
+  height: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.input-search-button-border-left{
+
+  border-left: 1px solid #70757a;
+}
+
+.content-list{
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.content-list-item{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.content-list-item-title{
+  font-size: 20px;
+}
+.content-list-item-description{
+  margin-top: 15px;
+}
