@@ -95,7 +95,7 @@ function App() {
       <div className="App">
         <div className="container">
           <Search />
-          {timeSearch && <div className="results-time">Results: {data.length} ({(timeSearch/1000).toFixed(3)} sec.)</div>}
+          {timeSearch && <div className="results-time">Results: {data.length} ({(timeSearch/1000000).toFixed(3)} sec.)</div>}
           <Content />
         </div>
       </div>
