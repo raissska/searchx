@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import { Context } from "../App";
 import Autocomplete from "./Autocomplete";
 import { ReactComponent as SearchIcon } from "../svg/search.svg";
@@ -15,6 +15,11 @@ export default function Search() {
     sessionFilteredOptions,
   } = useContext(Context);
 
+  let inputRef = useRef();
+
+  useEffect(() => {
+    inputRef.focus()
+  },[])
  
 
   return (
@@ -30,6 +35,7 @@ export default function Search() {
         >
           <input
             className="input-search"
+            ref={input => inputRef=input}
             type="text"
             value={search}
             onChange={handleSearch}
